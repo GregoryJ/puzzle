@@ -1,13 +1,5 @@
 # puzzle
 
-From: Gregory Jerome [mailto:greg@gregoryjerome.com] 
-Sent: Tuesday, October 6, 2015 4:03 PM
-To: 'Sam Schatz' <sschatz@athenahealth.com>
-Cc: athenasoftwaredev@gmail.com
-Subject: RE: time to chat about athenahealth
-
-Hi Sam,
-
 Great puzzle! I enjoyed working on it, but I wasn’t able to meet all the requirements.
 
 Maybe I’m missing something, but there seems to be a conflict between the requirement that the program accept up to 25 letters and the constraint that the answer fit into a 64-bit integer. It seems to me that the highest possible rank of a word is the factorial of the word’s length. Therefore, the highest possible ranking of a word 25 letters in length is the factorial of 25. The maximum word length whose factorial will fit into a 64-bit integer is 20. The factorial of 21 requires a BigInteger (C#).
